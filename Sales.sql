@@ -25,3 +25,9 @@ CREATE TABLE customers
  number_of_complaints INT
  
 );
+
+###Creating a Table - Exercise #1
+CREATE TABLE test
+(
+    test DECIMAL(5,3)
+);
