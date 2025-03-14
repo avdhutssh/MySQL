@@ -38,3 +38,13 @@ CREATE TABLE warehouse
     warehouse_id INT PRIMARY KEY AUTO_INCREMENT,
     warehouse_location VARCHAR(20)
 );
+
+###Creating a Table - Exercise #3
+CREATE TABLE orders
+(
+    order_id INT PRIMARY KEY AUTO_INCREMENT,
+    order_date DATE,
+    order_info INT,
+    order_value INT,
+    order_currency VARCHAR(10)
+);
