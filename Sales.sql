@@ -31,3 +31,10 @@ CREATE TABLE test
 (
     test DECIMAL(5,3)
 );
+
+###Creating a Table - Exercise #2
+CREATE TABLE warehouse
+(
+    warehouse_id INT PRIMARY KEY AUTO_INCREMENT,
+    warehouse_location VARCHAR(20)
+);
