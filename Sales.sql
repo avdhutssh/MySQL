@@ -48,3 +48,12 @@ CREATE TABLE orders
     order_value INT,
     order_currency VARCHAR(10)
 );
+
+###Creating a Table - Exercise #4
+CREATE TABLE products
+(
+ product_id INT PRIMARY KEY AUTO_INCREMENT,
+ product_name VARCHAR(20),
+ product_price INT,
+ warehouse_id INT
+);
