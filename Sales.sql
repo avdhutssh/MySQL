@@ -57,3 +57,12 @@ CREATE TABLE products
  product_price INT,
  warehouse_id INT
 );
+
+###Using DB and tables
+##1. By Selecting Database first
+USE sales;
+SELECT * FROM customers;
+
+##2. Explicitly calling DB
+SELECT * FROM sales.customers;
+
