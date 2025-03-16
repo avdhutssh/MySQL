@@ -113,3 +113,14 @@ CREATE TABLE order_info
     product_quantity INT,
     FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE CASCADE
 );
+
+#FOREIGN KEY constraint - Exercise #2
+CREATE TABLE orders
+(
+    order_id INT PRIMARY KEY AUTO_INCREMENT,
+    order_date DATE,
+    order_info_id INT,
+    order_value INT,
+    order_currency VARCHAR(10),
+    fOREIGN KEY (order_info_id) REFERENCES order_info(order_info_id)
+);
