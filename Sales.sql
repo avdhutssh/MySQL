@@ -97,3 +97,19 @@ CREATE TABLE companies
     headquarters_phone_number int(12),
 	primary key (company_id)
 );
+
+###Foreign Key
+DROP TABLE sales;
+DROP TABLE companies;
+DROP TABLE customers;
+DROP TABLE items;
+
+#FOREIGN KEY constraint - Exercise #1
+CREATE TABLE order_info
+(
+    order_info_id INT PRIMARY KEY AUTO_INCREMENT,
+    order_id  INT,
+    product_id INT,
+    product_quantity INT,
+    FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE CASCADE
+);
