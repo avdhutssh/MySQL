@@ -143,3 +143,14 @@ VALUES ('John', 'Mackinley', 'M', 'john.mckinley@365careers.com', 0);
 
 ALTER TABLE customers
 ADD UNIQUE KEY (email_address);
+
+###UNIQUE constraint - Exercise #1
+CREATE TABLE products
+(
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(20),
+    product_price INT,
+    warehouse_id INT,
+    FOREIGN KEY (warehouse_id) REFERENCES warehouses(warehouse_id),
+    UNIQUE KEY (product_name)
+);
