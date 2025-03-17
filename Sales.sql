@@ -144,6 +144,11 @@ VALUES ('John', 'Mackinley', 'M', 'john.mckinley@365careers.com', 0);
 ALTER TABLE customers
 ADD UNIQUE KEY (email_address);
 
+INSERT INTO customers (first_name, last_name, gender, number_of_complaints)
+VALUES ('Av', 'demo', 'M', 0);
+
+SELECT * FROM customers;
+
 ###UNIQUE constraint - Exercise #1
 CREATE TABLE products
 (
@@ -154,3 +159,21 @@ CREATE TABLE products
     FOREIGN KEY (warehouse_id) REFERENCES warehouses(warehouse_id),
     UNIQUE KEY (product_name)
 );
+
+### Default Key
+CREATE TABLE companies
+(
+    company_id VARCHAR(255),
+    company_name VARCHAR(255) DEFAULT 'X',
+    headquarters_phone_number VARCHAR(255),
+	PRIMARY KEY (company_id),
+	UNIQUE KEY (headquarters_phone_number)
+);
+
+INSERT INTO companies(company_id,headquarters_phone_number)
+VALUES('1','India');
+
+SELECT * FROM companies;
+
+DROP TABLE companies;
+
