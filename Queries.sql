@@ -220,7 +220,5 @@ CREATE TABLE products
 
 USE employees;
 SHOW TABLES;
-SELECT 
-    dept_no
-FROM
-    departments;
+SELECT dept_no FROM departments;
+SELECT * FROM departments;
