@@ -177,3 +177,13 @@ SELECT * FROM companies;
 
 DROP TABLE companies;
 
+###DEFAULT constraint - Exercise #1
+CREATE TABLE products
+(
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(20) DEFAULT 'no-name',
+    product_price INT,
+    warehouse_id INT,
+    FOREIGN KEY (warehouse_id) REFERENCES warehouses(warehouse_id),
+    UNIQUE KEY (product_name)
+);
