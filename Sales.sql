@@ -187,3 +187,22 @@ CREATE TABLE products
     FOREIGN KEY (warehouse_id) REFERENCES warehouses(warehouse_id),
     UNIQUE KEY (product_name)
 );
+
+###NOT NULL Constraint
+CREATE TABLE companies
+(
+    company_id VARCHAR(255),
+    company_name VARCHAR(255) NOT NULL,
+    headquarters_phone_number VARCHAR(255),
+	PRIMARY KEY (company_id)
+);
+
+ALTER TABLE companies
+MODIFY company_name VARCHAR(255) NULL;
+
+ALTER TABLE companies
+CHANGE COLUMN company_name company_name VARCHAR(255) NOT NULL;
+
+#Not Supported in MySql
+/** ALTER TABLE companies
+ALTER COLUMN company_name DROP NOT NULL; */
