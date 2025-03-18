@@ -216,9 +216,16 @@ CREATE TABLE products
     warehouse_id INT NOT NULL
 );
 
-###SELECT - FROM - exercise
+###SELECT - FROM
 
 USE employees;
 SHOW TABLES;
 SELECT dept_no FROM departments;
 SELECT * FROM departments;
+
+###SELECT - FROM - Exercises
+USE employees_10;
+SELECT * FROM employees;
+SELECT emp_no, birth_date, first_name, last_name, gender, hire_date FROM employees;
+SELECT * FROM departments;
+SELECT dept_no FROM departments;
