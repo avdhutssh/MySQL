@@ -215,3 +215,12 @@ CREATE TABLE products
     product_price INT NOT NULL,
     warehouse_id INT NOT NULL
 );
+
+###SELECT - FROM - exercise
+
+USE employees;
+SHOW TABLES;
+SELECT 
+    dept_no
+FROM
+    departments;
