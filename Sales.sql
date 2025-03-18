@@ -206,3 +206,12 @@ CHANGE COLUMN company_name company_name VARCHAR(255) NOT NULL;
 #Not Supported in MySql
 /** ALTER TABLE companies
 ALTER COLUMN company_name DROP NOT NULL; */
+
+###NOT NULL constraint - Exercise #1
+CREATE TABLE products
+(
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(20) NOT NULL,
+    product_price INT NOT NULL,
+    warehouse_id INT NOT NULL
+);
