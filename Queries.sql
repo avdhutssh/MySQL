@@ -242,3 +242,7 @@ WHERE first_name = 'Kellie' AND gender = 'F';
 ###OR
 SELECT * FROM employees
 WHERE first_name = 'Kellie' OR first_name = 'Aruna';
+
+###Operator precedence - exercise
+SELECT * FROM employees
+WHERE gender = 'F' AND (first_name = 'Kellie' OR first_name = 'Aruna');
