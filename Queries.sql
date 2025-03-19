@@ -216,6 +216,7 @@ CREATE TABLE products
     warehouse_id INT NOT NULL
 );
 
+###Execute employees.sql file to create employees database
 ###SELECT - FROM
 
 USE employees;
@@ -229,3 +230,7 @@ SELECT * FROM employees;
 SELECT emp_no, birth_date, first_name, last_name, gender, hire_date FROM employees;
 SELECT * FROM departments;
 SELECT dept_no FROM departments;
+
+###WHERE
+SELECT * FROM employees
+WHERE first_name = 'Elvis';
