@@ -234,3 +234,7 @@ SELECT dept_no FROM departments;
 ###WHERE
 SELECT * FROM employees
 WHERE first_name = 'Elvis';
+
+###AND
+SELECT * FROM employees
+WHERE first_name = 'Kellie' AND gender = 'F';
